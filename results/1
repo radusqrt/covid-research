@@ -1,6 +1,6 @@
 {
   global_best_cost: 37.82218973663947,
-  best_iters: [
+  iters: [
                      0, 0.15469976324292273,
      0.576544992103721,  1.2425466415358322,
      2.161828620327662,  3.3615531103022436,
@@ -20,13 +20,13 @@
      349.4851882098254,   372.7516703827387,
     396.21968888826905,   419.8445427428262
   ],
-  best_I0: 1001,
-  best_D_incbation: 3.5,
-  best_D_infectious: 2.9,
-  best_D_recovery_severe: 11.5,
-  best_CFR: 0.029,
-  best_InterventionTime: 14,
-  best_Time: 36,
-  best_start: 9,
-  best_R0: 2.3
+  I0: 1001,
+  D_incbation: 3.5,
+  D_infectious: 2.9,
+  D_recovery_severe: 11.5,
+  CFR: 0.029,
+  InterventionTime: 14,
+  Time: 36,
+  start: 9,
+  R0: 2.3
 }
