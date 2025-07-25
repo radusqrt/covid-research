@@ -2,6 +2,8 @@
 
 A self-supervised neural-analytic method to assess the evolution of COVID-19 in Romania.
 
+**Published on arXiv:** [2006.12926](https://arxiv.org/abs/2006.12926)
+
 ## Overview
 
 This repository contains research materials for analyzing the COVID-19 pandemic progression in Romania using neural-analytic methods. The work includes LaTeX source code for the paper, figures, and simulation results.
