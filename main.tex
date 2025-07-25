@@ -731,45 +731,15 @@ The equations of the proposed model are:
   \centering
   \renewcommand{\arraystretch}{2}
   \begin{tabular}{ll}
-    \begin{equation} \label{eq1}
-        \dv{S}{t} = - \beta I S \quad 
-    \end{equation} & 
+    $\dv{S}{t} = - \beta I S$ & $\dv{E}{t} = \beta I S - \sigma E$ \\[10pt]
+    
+    $\dv{I}{t} = \sigma E - \gamma I$ & $\dv{M}{t} = P_M \gamma I - \frac{1}{T_M} M$ \\[10pt]
 
-    \begin{equation} \label{eq2}
-        \dv{E}{t} = \beta I S - \sigma E \quad
-    \end{equation}\\
+    $\dv{V}{t} = P_V \gamma I - \frac{1}{T_H} V$ & $\dv{H}{t} = \frac{1}{T_H} V - \frac{1}{T_V} H$ \\[10pt]
 
-    \begin{equation} \label{eq3}
-        \dv{I}{t} = \sigma E - \gamma I \quad
-    \end{equation} &
+    $\dv{F}{t} = P_F \gamma I - \frac{1}{T_F} F$ & $\dv{R_M}{t} = \frac{1}{T_M} M$ \\[10pt]
 
-    \begin{equation} \label{eq4}
-    \dv{M}{t} = P_M \gamma I - \frac{1}{T_M} M\quad
-    \end{equation}\\
-
-    \begin{equation} \label{eq5}
-    \dv{V}{t} = P_V \gamma I - \frac{1}{T_H} V\quad
-    \end{equation}&
-
-    \begin{equation} \label{eq6}
-    \dv{H}{t} = \frac{1}{T_H} V - \frac{1}{T_V} H\quad
-    \end{equation}\\
-
-    \begin{equation} \label{eq7}
-    \dv{F}{t} = P_F \gamma I - \frac{1}{T_F} F\quad
-    \end{equation}&    
-
-    \begin{equation} \label{eq8}
-    \dv{R_M}{t} = \frac{1}{T_M} M\quad
-    \end{equation}\\
-
-    \begin{equation} \label{eq9}
-    \dv{R_V}{t} = \frac{1}{T_V} H\quad
-    \end{equation}&
-
-    \begin{equation} \label{eq10}
-    \dv{R_F}{t} = \frac{1}{T_F} F\quad
-    \end{equation}\\
+    $\dv{R_V}{t} = \frac{1}{T_V} H$ & $\dv{R_F}{t} = \frac{1}{T_F} F$ \\[10pt]
     
     $\beta = 
     \begin{cases}
@@ -787,14 +757,14 @@ We point out that the parameters $(\beta, \sigma, \gamma, P_M, P_V, P_F, T_M, T_
 A steady state occurs when all time derivatives are zero.
 
 \begin{itemize}
-    \item From \(\frac{dR_M}{dt} = \frac{1}{T_M} M = 0\), since \(T_M > 0\) \Rightarrow \(M = 0\).
-    \item From \(\frac{dR_V}{dt} = \frac{1}{T_V} H = 0\), since \(T_V > 0\) \Rightarrow \(H = 0\).
-    \item From \(\frac{dR_F}{dt} = \frac{1}{T_F} F = 0\), since \(T_F > 0\) \Rightarrow \(F = 0\).
-    \item From \(\frac{dM}{dt} = P_M \gamma I - \frac{1}{T_M} M = 0\), with \(M = 0\), we get \(P_M \gamma I = 0\). Since \(P_M, \gamma > 0\) \Rightarrow \(I = 0\).
-    \item From \(\frac{dI}{dt} = \sigma E - \gamma I = 0\), with \(I = 0\), \(\sigma E = 0\). Since \(\sigma > 0\) \Rightarrow \(E = 0\).
+    \item From \(\frac{dR_M}{dt} = \frac{1}{T_M} M = 0\), since \(T_M > 0\), we have \(M = 0\).
+    \item From \(\frac{dR_V}{dt} = \frac{1}{T_V} H = 0\), since \(T_V > 0\), we have \(H = 0\).
+    \item From \(\frac{dR_F}{dt} = \frac{1}{T_F} F = 0\), since \(T_F > 0\), we have \(F = 0\).
+    \item From \(\frac{dM}{dt} = P_M \gamma I - \frac{1}{T_M} M = 0\), with \(M = 0\), we get \(P_M \gamma I = 0\). Since \(P_M, \gamma > 0\), we have \(I = 0\).
+    \item From \(\frac{dI}{dt} = \sigma E - \gamma I = 0\), with \(I = 0\), \(\sigma E = 0\). Since \(\sigma > 0\), we have \(E = 0\).
     \item From \(\frac{dS}{dt} = -\beta I S = 0\), with \(I = 0\), \(S\) is unconstrained.
     \item From \(\frac{dE}{dt} = \beta I S - \sigma E = 0\), with \(I = 0\), \(E = 0\), this is satisfied.
-    \item From \(\frac{dV}{dt} = P_V \gamma I - \frac{1}{T_H} V = 0\), with \(I = 0\), \(\frac{1}{T_H} V = 0\). Since \(T_H > 0\) \Rightarrow \(V = 0\).
+    \item From \(\frac{dV}{dt} = P_V \gamma I - \frac{1}{T_H} V = 0\), with \(I = 0\), \(\frac{1}{T_H} V = 0\). Since \(T_H > 0\), we have \(V = 0\).
     \item From \(\frac{dH}{dt} = \frac{1}{T_H} V - \frac{1}{T_V} H = 0\), with \(V = 0\), \(H = 0\), this is satisfied.
     \item From \(\frac{dF}{dt} = P_F \gamma I - \frac{1}{T_F} F = 0\), with \(I = 0\), \(F = 0\), this is satisfied.
 \end{itemize}
